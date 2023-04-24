@@ -28,7 +28,7 @@
   font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .custom-container
@@ -40,9 +40,9 @@
 
 .search-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-top: 50px;
+  padding: 15px 0;
 }
 
 .ant-input-group-addon {
@@ -95,5 +95,38 @@
 }
 
 .search-box {
-  width: 400px;
+  width: 30%;
+}
+
+.ant-tree-treenode .ant-tree-iconEle {
+  margin-right: 10px;
+}
+
+.ant-input-search .ant-input-affix-wrapper {
+  border-radius: 23px;
+  border-start-start-radius: 23px !important; 
+  border-start-end-radius: 23px !important;
+  border-end-end-radius: 23px !important;
+  border-end-start-radius: 23px !important;
+  padding-right: 21%;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.ant-input-search .ant-input-affix-wrapper:hover{
+  border-color: #d9d9d9;
+}
+
+.ant-input-search .ant-btn.ant-btn-sm {
+  font-size: 14px;
+  height: 32px;
+  padding: 0px 7px;
+  border-start-start-radius: 23px !important; 
+  border-start-end-radius: 23px !important;
+  border-end-end-radius: 23px !important;
+  border-end-start-radius: 23px !important;
+  position: absolute;
+  top: 1px;
+  right: 0px; 
 }
