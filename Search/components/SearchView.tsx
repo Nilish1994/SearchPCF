@@ -62,9 +62,7 @@ export default function SearchView() {
         <Search
           placeholder="Quick Search"
           allowClear
-          enterButton={<Button type="primary" size="small">Search</Button>}
           size="small"
-          prefix={<SearchOutlined className="search-icon" />}
           onSearch={(value: string) => searchHandler(value)}
           className="search-box"
           // suffix={<SearchOutlined className="search-icon" />}

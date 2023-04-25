@@ -28,7 +28,7 @@
   font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .custom-container
@@ -54,22 +54,6 @@
   border-color: #1890ff;
   color: #fff;
   font-weight: bold;
-}
-
-.ant-input-group-addon button:hover {
-  background-color: #40a9ff;
-  border-color: #40a9ff;
-}
-
-.ant-input-affix-wrapper:hover,
-.ant-input-affix-wrapper-focused {
-  border-color: #1890ff;
-  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
-}
-
-.ant-input-affix-wrapper:focus-within {
-  border-color: #1890ff;
-  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
 }
 
 .ant-input-affix-wrapper .ant-input-prefix,
@@ -103,31 +87,45 @@
 }
 
 .ant-input-search .ant-input-affix-wrapper {
-  border-radius: 23px;
-  border-start-start-radius: 23px !important; 
-  border-start-end-radius: 23px !important;
-  border-end-end-radius: 23px !important;
-  border-end-start-radius: 23px !important;
-  padding-right: 21%;
   outline: none;
   box-shadow: none;
+  padding: 0 15px;
+  padding-right: 0 !important;
+  border-right: 0;
 }
 
+.ant-input-search .ant-input-group-addon button {
+  border: none !important;
+  background-color: transparent !important;
+}
 
-.ant-input-search .ant-input-affix-wrapper:hover{
+.ant-input-search .ant-input-group-addon {
+    border: 1px solid #d9d9d9 !important;
+    background-color: transparent !important;
+    border-left: none !important;
+    border-radius: 0 5px 5px 0 !important;
+    width: 32px;
+}
+
+.ant-input-search .ant-input-affix-wrapper:hover, .ant-input-affix-wrapper-focused{
   border-color: #d9d9d9;
 }
 
 .ant-input-search .ant-btn.ant-btn-sm {
   font-size: 14px;
   height: 32px;
-  padding: 0px 7px;
-  border-start-start-radius: 23px !important; 
-  border-start-end-radius: 23px !important;
-  border-end-end-radius: 23px !important;
-  border-end-start-radius: 23px !important;
-  position: absolute;
-  top: 1px;
-  right: 0px; 
-  z-index: 99;
+  padding: 0px;
+  margin: 0 !important;
+
+}
+
+.ant-input-search .anticon-search {
+  transform: scaleX(-1) !important;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+
+.ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary):active {
+  color: rgba(0, 0, 0, 0.45) !important;
 }
